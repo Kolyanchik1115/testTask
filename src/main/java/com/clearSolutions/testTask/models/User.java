@@ -15,7 +15,7 @@ public class User {
     private String lastName;
 
     @NotNull(message = "Birthday must not be empty")
-    @Past
+    @Past(message = "Must contain a past date")
     private LocalDate birthDate;
 
     private String address;
